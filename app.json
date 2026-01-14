@@ -16,6 +16,8 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.munaa.bookapp",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -24,6 +26,18 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0cbc8978-2d1f-4d37-8115-31ed7800a8ea"
+      }
+    },
+    "owner": "munaa",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/0cbc8978-2d1f-4d37-8115-31ed7800a8ea"
     }
   }
 }
