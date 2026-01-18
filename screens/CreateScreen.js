@@ -23,16 +23,16 @@ import * as FileSystem from "expo-file-system";
 
 
 export default function Create() {
-  const [name, setName] = useState("Test Title");
-  const [caption, setCaption] = useState("Test Caption");
-  const [author, setAuthor] = useState("Test Author");
+  const [name, setName] = useState("");
+  const [caption, setCaption] = useState("");
+  const [author, setAuthor] = useState("");
   const [rating, setRating] = useState(3);
   const [image, setImage] = useState(null); // to display the selected image
   const [imageBase64, setImageBase64] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const navigation = useNavigation();
- 
+
 
 
   /**
@@ -138,7 +138,7 @@ export default function Create() {
       });
 
       const data = await response.json();
-      
+
       if (!response.ok) {
         throw new Error(data.message || "Something went wrong");
       }
@@ -210,10 +210,10 @@ export default function Create() {
               </View>
             </View>
             <View style={styles.formGroup}>
-            <Text style={styles.label}>Book Author</Text>
-            <View style={styles.inputContainer}>
+              <Text style={styles.label}>Book Author</Text>
+              <View style={styles.inputContainer}>
                 <Ionicons
-                  name="book-outline"
+                  name="person-outline"
                   size={20}
                   color={COLORS.textSecondary}
                   style={styles.inputIcon}
@@ -227,7 +227,7 @@ export default function Create() {
                 />
               </View>
             </View>
-          
+
 
             {/* RATING */}
             <View style={styles.formGroup}>
