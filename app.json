@@ -13,7 +13,12 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "credentialsSource": "local",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.munaa.bookapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.munaa.bookapp",
@@ -33,9 +38,7 @@
       }
     },
     "owner": "munaa",
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
+    "runtimeVersion": "1.0.0",
     "updates": {
       "url": "https://u.expo.dev/0cbc8978-2d1f-4d37-8115-31ed7800a8ea"
     }
